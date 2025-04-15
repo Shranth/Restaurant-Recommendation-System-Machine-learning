@@ -6,7 +6,8 @@ This project presents an Enhanced Restaurant Recommendation System leveraging XG
 
 📈 EDA Visualizations: Insights into restaurant distributions, review counts, ratings, and check-ins using Plotly, Seaborn, and Matplotlib.
 
-🤖 Model Training: Predicts restaurant star ratings using:
+🤖 Model Training: 
+Predicts restaurant star ratings using:
 
 XGBoost Regressor
 
@@ -16,12 +17,14 @@ Voting Regressor (XGBoost + Random Forest)
 
 🧠 Recommendation Engine: Recommends top restaurants based on location and (optionally) categories.
 
+
 📁 Dataset
 The dataset is sourced from a Yelp-like JSON file, filtered for Las Vegas restaurants. It includes:
 
 business_id, name, stars, review_count, categories, latitude, longitude
 
 Additional merged data: checkins, tips, and reviews
+
 
 🧰 Tech Stack
 Python Libraries: pandas, numpy, matplotlib, seaborn, plotly, scikit-learn, xgboost
@@ -32,6 +35,7 @@ Clustering: KMeans, Silhouette Score
 
 Visualization: Seaborn, Matplotlib, Plotly
 
+
 📌 How It Works
 Data Preprocessing:
 
@@ -41,28 +45,21 @@ Filters for Las Vegas restaurants
 
 Cleans and encodes features
 
+
 EDA:
-
 Maps of restaurant distribution
-
 Bar plots of top-reviewed and top-rated restaurants
 
 Clustering:
-
 Uses KMeans to cluster based on geolocation
-
 Optimal number of clusters chosen via Silhouette Score
 
 Model Training & Evaluation:
-
 Trains on relevant features to predict stars
-
 Compares predictions of different regressors
 
 Recommendations:
-
 Based on cluster and (optionally) user-specified categories
-
 Outputs top restaurants in the given cluster
 
 📷 Sample Visualizations
